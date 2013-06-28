@@ -10,6 +10,7 @@ require 'csv'
 
 class AppDelegate
     attr_accessor :window, :text_field, :label, :defenition
+    attr_accessor :word, :word_defenition
     def applicationDidFinishLaunching(a_notification)
         # Insert code here to initialize your application
     end
@@ -22,6 +23,8 @@ class AppDelegate
         importCSV(true)
         new_word(true)
     end
+    
+    #HangMan Mode code
     
     def new_word(sender)
         i = rand(@sample_words.size)
@@ -44,6 +47,9 @@ class AppDelegate
         
         print_word
         showDefenition(true)
+        #FlashCard Code
+        printDefenition(false)
+        #end
     end
     
     def submit(sender)
@@ -78,6 +84,9 @@ class AppDelegate
     end
     
     def print_word
+        #FalshCard
+        @word.stringValue = @answer[0]
+        #end
         @label.stringValue = ""
         @a_word.each do |char|
             @label.stringValue += char
@@ -106,6 +115,21 @@ class AppDelegate
     
     def showDefenition(sender)
         @defenition.stringValue = @answer[2]
+    end
+    
+    #FlashCard Mode Code
+    #in print_word the @word is printed
+    def showDefenitionForFlashCard(sender)
+        printDefenition(true)
+    end
+    
+    def printDefenition(show)
+        if show == true
+            @word_defenition.stringValue = @answer[2]
+        elsif show == false
+            @word_defenition.stringValue = "Click 'Show Defenition' to reveal the answer"
+        end
+        #in new_word the function is called to hide next word's defenition
     end
 end
 
