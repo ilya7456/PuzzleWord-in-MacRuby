@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC6AE441177D91060034C4A6 /* puzzleWord.icns in Resources */ = {isa = PBXBuildFile; fileRef = AC6AE440177D91060034C4A6 /* puzzleWord.icns */; };
+		ACD7475D177B277B004D29A6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD7475C177B277B004D29A6 /* Cocoa.framework */; };
+		ACD7475F177B277B004D29A6 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD7475E177B277B004D29A6 /* MacRuby.framework */; };
+		ACD74768177B277C004D29A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACD74766177B277C004D29A6 /* InfoPlist.strings */; };
+		ACD7476A177B277C004D29A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD74769177B277C004D29A6 /* main.m */; };
+		ACD7476F177B277C004D29A6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACD7476D177B277C004D29A6 /* MainMenu.xib */; };
+		ACD74772177B277C004D29A6 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = ACD74771177B277C004D29A6 /* rb_main.rb */; };
+		ACD74774177B277C004D29A6 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = ACD74773177B277C004D29A6 /* AppDelegate.rb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACD74761177B277C004D29A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACD74751177B277B004D29A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACD74758177B277B004D29A6;
+			remoteInfo = PuzzleWord;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC6AE440177D91060034C4A6 /* puzzleWord.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = puzzleWord.icns; path = ../../../Icons/puzzleWord.icns; sourceTree = "<group>"; };
+		ACD74759177B277B004D29A6 /* PuzzleWord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuzzleWord.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACD7475C177B277B004D29A6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		ACD7475E177B277B004D29A6 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
+		ACD74765177B277C004D29A6 /* PuzzleWord-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PuzzleWord-Info.plist"; sourceTree = "<group>"; };
+		ACD74767177B277C004D29A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ACD74769177B277C004D29A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ACD7476B177B277C004D29A6 /* PuzzleWord-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PuzzleWord-Prefix.pch"; sourceTree = "<group>"; };
+		ACD7476E177B277C004D29A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		ACD74771177B277C004D29A6 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		ACD74773177B277C004D29A6 /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACD74756177B277B004D29A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACD7475D177B277B004D29A6 /* Cocoa.framework in Frameworks */,
+				ACD7475F177B277B004D29A6 /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACD74750177B277B004D29A6 = {
+			isa = PBXGroup;
+			children = (
+				AC6AE440177D91060034C4A6 /* puzzleWord.icns */,
+				ACD74763177B277C004D29A6 /* PuzzleWord */,
+				ACD7475B177B277B004D29A6 /* Frameworks */,
+				ACD7475A177B277B004D29A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACD7475A177B277B004D29A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACD74759177B277B004D29A6 /* PuzzleWord.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACD7475B177B277B004D29A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACD7475C177B277B004D29A6 /* Cocoa.framework */,
+				ACD7475E177B277B004D29A6 /* MacRuby.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACD74763177B277C004D29A6 /* PuzzleWord */ = {
+			isa = PBXGroup;
+			children = (
+				ACD74773177B277C004D29A6 /* AppDelegate.rb */,
+				ACD7476C177B277C004D29A6 /* Resources */,
+				ACD74770177B277C004D29A6 /* Other Sources */,
+				ACD74764177B277C004D29A6 /* Supporting Files */,
+			);
+			path = PuzzleWord;
+			sourceTree = "<group>";
+		};
+		ACD74764177B277C004D29A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACD74765177B277C004D29A6 /* PuzzleWord-Info.plist */,
+				ACD74766177B277C004D29A6 /* InfoPlist.strings */,
+				ACD74769177B277C004D29A6 /* main.m */,
+				ACD7476B177B277C004D29A6 /* PuzzleWord-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ACD7476C177B277C004D29A6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ACD7476D177B277C004D29A6 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		ACD74770177B277C004D29A6 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				ACD74771177B277C004D29A6 /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		ACD74760177B277C004D29A6 /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed";
+			buildConfigurationList = ACD7477A177B277C004D29A6 /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			dependencies = (
+				ACD74762177B277C004D29A6 /* PBXTargetDependency */,
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		ACD74758177B277B004D29A6 /* PuzzleWord */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACD74777177B277C004D29A6 /* Build configuration list for PBXNativeTarget "PuzzleWord" */;
+			buildPhases = (
+				ACD74755177B277B004D29A6 /* Sources */,
+				ACD74756177B277B004D29A6 /* Frameworks */,
+				ACD74757177B277B004D29A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PuzzleWord;
+			productName = PuzzleWord;
+			productReference = ACD74759177B277B004D29A6 /* PuzzleWord.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACD74751177B277B004D29A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Ilya Pozdneev";
+			};
+			buildConfigurationList = ACD74754177B277B004D29A6 /* Build configuration list for PBXProject "PuzzleWord" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ACD74750177B277B004D29A6;
+			productRefGroup = ACD7475A177B277B004D29A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACD74758177B277B004D29A6 /* PuzzleWord */,
+				ACD74760177B277C004D29A6 /* Deployment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACD74757177B277B004D29A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACD74768177B277C004D29A6 /* InfoPlist.strings in Resources */,
+				ACD7476F177B277C004D29A6 /* MainMenu.xib in Resources */,
+				ACD74772177B277C004D29A6 /* rb_main.rb in Resources */,
+				ACD74774177B277C004D29A6 /* AppDelegate.rb in Resources */,
+				AC6AE441177D91060034C4A6 /* puzzleWord.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACD74755177B277B004D29A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACD7476A177B277C004D29A6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACD74762177B277C004D29A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACD74758177B277B004D29A6 /* PuzzleWord */;
+			targetProxy = ACD74761177B277C004D29A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ACD74766177B277C004D29A6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACD74767177B277C004D29A6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ACD7476D177B277C004D29A6 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACD7476E177B277C004D29A6 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACD74775177B277C004D29A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		ACD74776177B277C004D29A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		ACD74778177B277C004D29A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"\"/Library/Frameworks/\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PuzzleWord/PuzzleWord-Prefix.pch";
+				INFOPLIST_FILE = "PuzzleWord/PuzzleWord-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ACD74779177B277C004D29A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"\"/Library/Frameworks/\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PuzzleWord/PuzzleWord-Prefix.pch";
+				INFOPLIST_FILE = "PuzzleWord/PuzzleWord-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		ACD7477B177B277C004D29A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		ACD7477C177B277C004D29A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACD74754177B277B004D29A6 /* Build configuration list for PBXProject "PuzzleWord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACD74775177B277C004D29A6 /* Debug */,
+				ACD74776177B277C004D29A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACD74777177B277C004D29A6 /* Build configuration list for PBXNativeTarget "PuzzleWord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACD74778177B277C004D29A6 /* Debug */,
+				ACD74779177B277C004D29A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACD7477A177B277C004D29A6 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACD7477B177B277C004D29A6 /* Debug */,
+				ACD7477C177B277C004D29A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACD74751177B277B004D29A6 /* Project object */;
+}
