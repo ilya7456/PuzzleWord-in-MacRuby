@@ -113,6 +113,29 @@ class AppDelegate
         end
     end
     
+    def exportCSV(sender)
+        puts @sample_words.length
+        name = "/Learnt(#{Time.now}).csv"
+    
+        dialog = NSOpenPanel.openPanel
+        dialog.canChooseFiles = false
+        dialog.canChooseDirectories = true
+        dialog.allowsMultipleSelection = false
+        
+        if dialog.runModalForDirectory(nil, file:nil) == NSOKButton
+            path = dialog.filenames.first
+        end
+        
+        csvFile = @sample_words
+        p = path + name
+        
+        CSV.open(p, "wb") do |csv|
+            csvFile.each do |item|
+                csv << item
+            end
+        end
+    end
+    
     def showDefenition(sender)
         @defenition.stringValue = @answer[2]
     end

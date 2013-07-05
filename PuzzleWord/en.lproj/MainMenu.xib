@@ -1320,7 +1320,7 @@
 				<string key="NSName">_NSMainMenu</string>
 			</object>
 			<object class="NSWindowTemplate" id="972006081">
-				<int key="NSWindowStyleMask">15</int>
+				<int key="NSWindowStyleMask">5</int>
 				<int key="NSWindowBacking">2</int>
 				<string key="NSWindowRect">{{335, 390}, {469, 361}}</string>
 				<int key="NSWTFlags">1954021376</int>
@@ -1543,7 +1543,7 @@
 												<string key="NSFrame">{{11, 10}, {111, 32}}</string>
 												<reference key="NSSuperview" ref="454845772"/>
 												<reference key="NSWindow"/>
-												<reference key="NSNextKeyView" ref="152250961"/>
+												<reference key="NSNextKeyView" ref="1030609714"/>
 												<string key="NSReuseIdentifierKey">_NS:9</string>
 												<bool key="NSEnabled">YES</bool>
 												<object class="NSButtonCell" key="NSCell" id="586133575">
@@ -1553,6 +1553,31 @@
 													<reference key="NSSupport" ref="176716505"/>
 													<string key="NSCellIdentifier">_NS:9</string>
 													<reference key="NSControlView" ref="778119787"/>
+													<int key="NSButtonFlags">-2038284288</int>
+													<int key="NSButtonFlags2">129</int>
+													<string key="NSAlternateContents"/>
+													<string key="NSKeyEquivalent"/>
+													<int key="NSPeriodicDelay">200</int>
+													<int key="NSPeriodicInterval">25</int>
+												</object>
+												<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
+											</object>
+											<object class="NSButton" id="1030609714">
+												<reference key="NSNextResponder" ref="454845772"/>
+												<int key="NSvFlags">268</int>
+												<string key="NSFrame">{{302, 10}, {110, 32}}</string>
+												<reference key="NSSuperview" ref="454845772"/>
+												<reference key="NSWindow"/>
+												<reference key="NSNextKeyView" ref="152250961"/>
+												<string key="NSReuseIdentifierKey">_NS:9</string>
+												<bool key="NSEnabled">YES</bool>
+												<object class="NSButtonCell" key="NSCell" id="856272877">
+													<int key="NSCellFlags">67108864</int>
+													<int key="NSCellFlags2">134217728</int>
+													<string key="NSContents">Export CSV</string>
+													<reference key="NSSupport" ref="176716505"/>
+													<string key="NSCellIdentifier">_NS:9</string>
+													<reference key="NSControlView" ref="1030609714"/>
 													<int key="NSButtonFlags">-2038284288</int>
 													<int key="NSButtonFlags2">129</int>
 													<string key="NSAlternateContents"/>
@@ -2517,6 +2542,14 @@
 						<reference key="destination" ref="476327033"/>
 					</object>
 					<int key="connectionID">589</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">exportCSV:</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="1030609714"/>
+					</object>
+					<int key="connectionID">609</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -3618,6 +3651,7 @@
 							<reference ref="740184408"/>
 							<reference ref="342060388"/>
 							<reference ref="778119787"/>
+							<reference ref="1030609714"/>
 						</object>
 						<reference key="parent" ref="139827124"/>
 					</object>
@@ -3788,6 +3822,20 @@
 						<int key="objectID">584</int>
 						<reference key="object" ref="437113154"/>
 						<reference key="parent" ref="476327033"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">602</int>
+						<reference key="object" ref="1030609714"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="856272877"/>
+						</object>
+						<reference key="parent" ref="454845772"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">603</int>
+						<reference key="object" ref="856272877"/>
+						<reference key="parent" ref="1030609714"/>
 					</object>
 				</object>
 			</object>
@@ -3966,6 +4014,8 @@
 					<string>582.IBPluginDependency</string>
 					<string>583.IBPluginDependency</string>
 					<string>584.IBPluginDependency</string>
+					<string>602.IBPluginDependency</string>
+					<string>603.IBPluginDependency</string>
 					<string>72.IBPluginDependency</string>
 					<string>73.IBPluginDependency</string>
 					<string>74.IBPluginDependency</string>
@@ -4164,6 +4214,8 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="unlocalizedProperties">
@@ -4178,7 +4230,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">589</int>
+			<int key="maxID">609</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -4190,6 +4242,7 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>exportCSV:</string>
 							<string>importCSV:</string>
 							<string>new_word:</string>
 							<string>showDefenition:</string>
@@ -4198,6 +4251,7 @@
 						</object>
 						<object class="NSArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -4209,6 +4263,7 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>exportCSV:</string>
 							<string>importCSV:</string>
 							<string>new_word:</string>
 							<string>showDefenition:</string>
@@ -4217,6 +4272,10 @@
 						</object>
 						<object class="NSArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBActionInfo">
+								<string key="name">exportCSV:</string>
+								<string key="candidateClassName">id</string>
+							</object>
 							<object class="IBActionInfo">
 								<string key="name">importCSV:</string>
 								<string key="candidateClassName">id</string>
